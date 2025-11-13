@@ -1,0 +1,28 @@
+{% extends 'detection/base.html' %}
+{% block content %}
+<h2>Analyze Network Event</h2>
+<form method="post" class="row g-3">{% csrf_token %}
+  <div class="col-md-6">
+    <input type="text" name="source_ip" placeholder="Source IP" class="form-control" required>
+  </div>
+  <div class="col-md-6">
+    <input type="text" name="destination_ip" placeholder="Destination IP" class="form-control" required>
+  </div>
+  <div class="col-md-4">
+    <select name="protocol" class="form-select">
+      <option>TCP</option>
+      <option>UDP</option>
+      <option>ICMP</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+    <input type="number" name="packet_size" placeholder="Packet Size" class="form-control">
+  </div>
+  <div class="col-md-4">
+    <input type="number" name="duration" placeholder="Duration" class="form-control">
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Analyze</button>
+  </div>
+</form>
+{% endblock %}

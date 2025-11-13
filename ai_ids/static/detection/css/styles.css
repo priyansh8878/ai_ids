@@ -1,0 +1,168 @@
+/* =============================
+   AI Intrusion Detection System
+   Custom Theme (Cyber Dark)
+   ============================= */
+
+body {
+  background-color: #0d1117;
+  color: #e6edf3;
+  font-family: "Inter", "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #1e1e2e, #121212);
+  border-bottom: 1px solid #2b2b40;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #00ffff !important;
+  font-size: 1.4rem;
+  text-shadow: 0 0 8px #00ffff;
+}
+
+.navbar .btn {
+  background-color: #00ffff;
+  color: #0d1117;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.navbar .btn:hover {
+  background-color: #00b3b3;
+}
+
+/* Container */
+.container {
+  margin-top: 30px;
+}
+
+/* Headings */
+h2, h3, h4 {
+  color: #00ffff;
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.4);
+  font-weight: 600;
+}
+
+/* Table Styles */
+.table-dark {
+  background-color: #161b22;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #2b2b40;
+}
+
+.table-dark thead {
+  background-color: #1e1e2e;
+  color: #00ffff;
+}
+
+.table-dark tbody tr {
+  transition: background 0.2s ease;
+}
+
+.table-dark tbody tr:hover {
+  background-color: rgba(0, 255, 255, 0.05);
+}
+
+.table-success {
+  background-color: rgba(0, 255, 0, 0.05) !important;
+  color: #4fff4f !important;
+}
+
+.table-danger {
+  background-color: rgba(255, 0, 0, 0.1) !important;
+  color: #ff6666 !important;
+}
+
+/* Buttons */
+.btn-success {
+  background-color: #00ff99;
+  border: none;
+  font-weight: 600;
+  color: #000;
+}
+
+.btn-success:hover {
+  background-color: #00cc7a;
+}
+
+.btn-primary {
+  background-color: #00ffff;
+  color: #0d1117;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #00b3b3;
+}
+
+/* Forms */
+.form-control, .form-select {
+  background-color: #161b22;
+  border: 1px solid #2b2b40;
+  color: #e6edf3;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #00ffff;
+  box-shadow: 0 0 6px #00ffff;
+  background-color: #0d1117;
+  color: #fff;
+}
+
+::placeholder {
+  color: #7a8490;
+}
+
+/* Cards or Panels */
+.card {
+  background-color: #161b22;
+  border: 1px solid #2b2b40;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
+}
+
+.card-header {
+  background-color: #1e1e2e;
+  font-weight: 600;
+}
+
+/* Glow effect for important text */
+.glow-text {
+  color: #00ffff;
+  text-shadow: 0 0 8px #00ffff;
+}
+
+/* Animations */
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 10px rgba(0, 255, 255, 0.1); }
+  50% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.6); }
+  100% { box-shadow: 0 0 10px rgba(0, 255, 255, 0.1); }
+}
+
+.table-danger, .table-success {
+  animation: pulse-glow 3s infinite;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  text-align: center;
+  color: #aaa;
+  border-top: 1px solid #2b2b40;
+  font-size: 0.9rem;
+}
+footer a {
+  color: #00ffff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
